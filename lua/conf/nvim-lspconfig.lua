@@ -73,6 +73,7 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 local servers = {
     -- 语言服务器名称：配置选项
     sumneko_lua = require("lsp.sumneko_lua"),
+    gopls = require("lsp.gopls"),
 }
 
 for name, options in pairs(servers) do
