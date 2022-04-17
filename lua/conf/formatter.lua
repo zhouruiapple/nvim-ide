@@ -11,6 +11,14 @@ require("formatter").setup(
                     }
                 end
             },
+            go = {
+                function()
+                    return {
+                        exe = "gofmt",
+                        stdin = true
+                    }
+                end
+            },
         }
     }
 )
